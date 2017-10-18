@@ -24,6 +24,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
 
+def setup
+  OmniAuth.config.test_mode = true
+
 
   # Add more helper methods to be used by all tests here...
 end
